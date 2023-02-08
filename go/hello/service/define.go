@@ -3,8 +3,8 @@ package service
 import scyna "github.com/scyna/core"
 
 const (
-	HELLO_URL = "/example/hello/hello"
-	ADD_URL   = "/example/hello/add"
+	HELLO_URL = "/ex/hello/hello"
+	ADD_URL   = "/ex/hello/add"
 )
 
 var (
