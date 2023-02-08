@@ -17,7 +17,7 @@ func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountReque
 		return scyna.REQUEST_INVALID
 	}
 
-	if _, err := db.GetAccount(request.Email); err != nil {
+	if _, err := db.GetAccount(request.Email); err == nil {
 		return repository.ACCOUNT_EXISTED
 	}
 

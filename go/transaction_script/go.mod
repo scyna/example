@@ -6,7 +6,6 @@ require (
 	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
 	github.com/scylladb/gocqlx/v2 v2.7.0
 	github.com/scyna/core v1.0.6-0.20230207135020-4341b42f274b
-	github.com/scyna/core/examples/account v0.0.0-20230207135020-4341b42f274b
 	google.golang.org/protobuf v1.28.0
 )
 
@@ -15,6 +14,7 @@ require (
 	github.com/gocql/gocql v1.0.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/hailocab/go-hostpool v0.0.0-20160125115350-e80d13ce29ed // indirect
+	github.com/minio/highwayhash v1.0.2 // indirect
 	github.com/nats-io/nats.go v1.14.0 // indirect
 	github.com/nats-io/nkeys v0.3.0 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect

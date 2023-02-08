@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/scyna/core/examples/account/service"
+	"ex/transaction_script/service"
+
 	scyna_setup "github.com/scyna/core/setup"
 )
 
