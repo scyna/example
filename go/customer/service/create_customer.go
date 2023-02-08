@@ -3,7 +3,7 @@ package service
 import (
 	"ex/customer/domain"
 	"ex/customer/model"
-	proto "ex/customer/proto/generated"
+	proto "ex/customer/proto"
 
 	scyna "github.com/scyna/core"
 )

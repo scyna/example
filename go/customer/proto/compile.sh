@@ -1,1 +1,1 @@
-protoc -I=. --go_out=./generated customer.proto
+protoc -I=. --go_out=. customer.proto

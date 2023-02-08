@@ -3,7 +3,7 @@ package event
 import (
 	"log"
 
-	proto "ex/account/proto/generated"
+	proto "ex/account/proto"
 
 	scyna "github.com/scyna/core"
 )

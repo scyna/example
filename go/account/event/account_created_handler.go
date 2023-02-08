@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	proto "ex/account/proto/generated"
+	proto "ex/account/proto"
 	"ex/account/service"
 
 	scyna "github.com/scyna/core"

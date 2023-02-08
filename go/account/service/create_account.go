@@ -6,7 +6,7 @@ import (
 
 	scyna "github.com/scyna/core"
 
-	proto "ex/account/proto/generated"
+	proto "ex/account/proto"
 )
 
 func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
