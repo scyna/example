@@ -40,7 +40,7 @@ func TestCreateThenGet(t *testing.T) {
 
 	scyna_test.EndpointTest(service.GET_ACCOUNT_URL).
 		WithRequest(&proto.GetAccountByEmailRequest{Email: "a@gmail.com"}).
-		ExpectResponse(&proto.Account{
+		ExpectResponse(&proto.GetAccountResponse{
 			Id:    response.Id,
 			Email: "a@gmail.com",
 			Name:  "Nguyen Van A",
@@ -50,7 +50,7 @@ func TestCreateThenGet(t *testing.T) {
 func TestCreateBadEmail(t *testing.T) {
 	cleanup()
 	scyna_test.EndpointTest(service.CREATE_ACCOUNT_URL).
-		WithRequest(&proto.Account{
+		WithRequest(&proto.GetAccountResponse{
 			Email: "a+gmail.com",
 			Name:  "Nguyen Van A",
 		}).

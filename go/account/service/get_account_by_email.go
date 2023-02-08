@@ -24,7 +24,7 @@ func GetAccountByEmailHandler(ctx *scyna.Endpoint, request *proto.GetAccountByEm
 		return ret
 	}
 
-	ctx.Response(&proto.Account{
+	ctx.Response(&proto.GetAccountResponse{
 		Id:    account.ID,
 		Email: account.Email.String(),
 		Name:  account.Name,
