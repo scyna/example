@@ -1,0 +1,7 @@
+go 1.19
+
+use (
+	./go/hello
+	./go/account
+	./go/customer
+)

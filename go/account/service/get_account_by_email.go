@@ -1,10 +1,12 @@
 package service
 
 import (
+	"ex/account/domain"
+	"ex/account/model"
+
+	proto "ex/account/proto/generated"
+
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/domain"
-	"github.com/scyna/core/examples/account/model"
-	proto "github.com/scyna/core/examples/account/proto/generated"
 )
 
 func GetAccountByEmailHandler(ctx *scyna.Endpoint, request *proto.GetAccountByEmailRequest) scyna.Error {

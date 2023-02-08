@@ -1,8 +1,9 @@
 package repository
 
 import (
+	"ex/account/domain"
+
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/domain"
 )
 
 const ACCOUNT_TABLE = "ex_account.account"

@@ -1,9 +1,10 @@
 package repository
 
 import (
+	"ex/account/model"
+
 	"github.com/scylladb/gocqlx/v2/qb"
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/model"
 )
 
 func (r *accountRepository) GetAccountByID(ID uint64) (*model.Account, scyna.Error) {

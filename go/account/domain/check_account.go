@@ -1,8 +1,9 @@
 package domain
 
 import (
+	"ex/account/model"
+
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/model"
 )
 
 func AssureAccountNotExists(repository IRepository, email model.EmailAddress) scyna.Error {

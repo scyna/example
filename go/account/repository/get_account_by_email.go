@@ -3,9 +3,10 @@ package repository
 import (
 	"log"
 
+	"ex/account/model"
+
 	"github.com/scylladb/gocqlx/v2/qb"
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/model"
 )
 
 func (r *accountRepository) GetAccountByEmail(email model.EmailAddress) (*model.Account, scyna.Error) {

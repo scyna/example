@@ -1,18 +1,16 @@
 package domain
 
 import (
-	"ex/account/model"
+	"ex/customer/model"
 
 	scyna "github.com/scyna/core"
 )
 
-type IRepository interface {
-	GetAccountByEmail(email model.EmailAddress) (*model.Account, scyna.Error)
-	GetAccountByID(ID uint64) (*model.Account, scyna.Error)
-	LoadPassword(acc *model.Account) scyna.Error
+var OneID = scyna.InitSerialNumber("ddd.customer.oneid")
 
-	CreateAccount(cmd *scyna.Command, account *model.Account) scyna.Error
-	UpdatePassword(cmd *scyna.Command, account *model.Account) scyna.Error
+type IRepository interface {
+	CreateCustomerProfile(customer *model.Customer) scyna.Error
+	/*TODO: methods*/
 }
 
 type RepositoryCreator func(LOG scyna.Logger) IRepository

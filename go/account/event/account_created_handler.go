@@ -4,9 +4,10 @@ import (
 	"log"
 	"time"
 
+	proto "ex/account/proto/generated"
+	"ex/account/service"
+
 	scyna "github.com/scyna/core"
-	proto "github.com/scyna/core/examples/account/proto/generated"
-	"github.com/scyna/core/examples/account/service"
 )
 
 func AccountCreatedHandler(ctx *scyna.Event, event *proto.AccountCreated) {

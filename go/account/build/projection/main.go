@@ -1,9 +1,10 @@
 package main
 
 import (
+	"ex/account/service"
+
 	scyna "github.com/scyna/core"
 	"github.com/scyna/core/examples/account/event"
-	"github.com/scyna/core/examples/account/service"
 )
 
 func main() {

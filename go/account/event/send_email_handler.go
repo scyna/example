@@ -3,8 +3,9 @@ package event
 import (
 	"log"
 
+	proto "ex/account/proto/generated"
+
 	scyna "github.com/scyna/core"
-	proto "github.com/scyna/core/examples/account/proto/generated"
 )
 
 func SendEmailHandler(ctx *scyna.Context, event *proto.SendEmailTask) {

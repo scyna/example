@@ -1,8 +1,9 @@
 package repository
 
 import (
+	"ex/account/model"
+
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/model"
 )
 
 const _QUERY = "INSERT INTO " + ACCOUNT_TABLE + "(id, name, email, password) VALUES(?,?,?,?)"
