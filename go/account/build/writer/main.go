@@ -1,10 +1,11 @@
 package main
 
 import (
+	"ex/account/domain"
+	"ex/account/repository"
+	"ex/account/service"
+
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/domain"
-	"github.com/scyna/core/examples/account/repository"
-	"github.com/scyna/core/examples/account/service"
 )
 
 func main() {

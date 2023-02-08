@@ -1,11 +1,12 @@
-package account_test
+package test
 
 import (
 	"testing"
 
-	"github.com/scyna/core/examples/account/model"
-	proto "github.com/scyna/core/examples/account/proto/generated"
-	"github.com/scyna/core/examples/account/service"
+	"ex/account/model"
+	proto "ex/account/proto"
+	"ex/account/service"
+
 	scyna_test "github.com/scyna/core/testing"
 )
 

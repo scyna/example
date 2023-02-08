@@ -1,12 +1,9 @@
 package test
 
 import (
+	"ex/transaction_script/service"
 	"os"
 	"testing"
-
-	"ex/account/domain"
-	"ex/account/repository"
-	"ex/account/service"
 
 	scyna "github.com/scyna/core"
 	scyna_test "github.com/scyna/core/testing"
@@ -14,12 +11,10 @@ import (
 
 func TestMain(m *testing.M) {
 	scyna_test.Init("scyna_test")
-	scyna.InitSingleWriter("ex_account")
-	domain.AttachRepositoryCreator(repository.NewRepository)
 
 	/*register services*/
 	scyna.RegisterEndpoint(service.CREATE_ACCOUNT_URL, service.CreateAccountHandler)
-	scyna.RegisterEndpoint(service.GET_ACCOUNT_URL, service.GetAccountByEmailHandler)
+	scyna.RegisterEndpoint(service.GET_ACCOUNT_URL, service.GetAccountHandler)
 
 	exitVal := m.Run()
 	cleanup()
