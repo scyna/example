@@ -13,9 +13,4 @@
     <PackageReference Include="Scylla.Net" Version="0.0.1-alpha1" /> 
     <PackageReference Include="Scyna.Net" Version="1.0.2" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\scyna\scyna.csproj" />
-  </ItemGroup>
-
 </Project>
