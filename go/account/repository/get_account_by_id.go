@@ -21,7 +21,7 @@ func (r *accountRepository) GetAccountByID(ID uint64) (*model.Account, scyna.Err
 		Limit(1).
 		Query(scyna.DB).Bind(ID).GetRelease(&account); err != nil {
 		r.LOG.Error(err.Error())
-		return nil, model.USER_NOT_EXISTED
+		return nil, model.ACCOUNT_NOT_EXISTED
 	}
 
 	ret := &model.Account{
