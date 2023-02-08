@@ -27,5 +27,5 @@ func TestMain(m *testing.M) {
 }
 
 func cleanup() {
-	scyna.DB.Query("TRUNCATE chat_account.account", nil).ExecRelease()
+	scyna.DB.Query("TRUNCATE ex_account.account", nil).ExecRelease()
 }
