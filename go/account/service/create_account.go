@@ -10,7 +10,7 @@ import (
 )
 
 func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
-	ctx.Logger.Info("Receive CreateUserRequest")
+	ctx.Logger.Info("Receive CreateAccountRequest")
 
 	repository := domain.LoadRepository(ctx.Logger)
 

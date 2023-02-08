@@ -10,7 +10,7 @@ import (
 )
 
 func GetAccountByEmailHandler(ctx *scyna.Endpoint, request *proto.GetAccountByEmailRequest) scyna.Error {
-	ctx.Logger.Info("Receive GetUserRequest")
+	ctx.Logger.Info("Receive GetAccountRequest")
 
 	repository := domain.LoadRepository(ctx.Logger)
 

@@ -1,10 +1,9 @@
 package main
 
 import (
-	"ex/account/service"
+	"ex/transaction_script/service"
 
 	scyna "github.com/scyna/core"
-	"github.com/scyna/core/examples/account/event"
 )
 
 func main() {
@@ -15,7 +14,7 @@ func main() {
 	})
 	defer scyna.Release()
 
-	scyna.RegisterEvent("ex_account", service.ACCOUNT_CREATED_CHANNEL, event.AccountCreatedHandler)
-	scyna.RegisterTask("ex_account", service.SEND_EMAIL_CHANNEL, event.SendEmailHandler)
+	scyna.RegisterEndpoint(service.CREATE_ACCOUNT_URL, service.CreateAccountHandler)
+
 	scyna.Start()
 }

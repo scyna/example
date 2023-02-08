@@ -4,4 +4,5 @@ use (
 	./go/hello
 	./go/account
 	./go/customer
+	./go/transaction_script
 )
