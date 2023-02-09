@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
-	github.com/scyna/core v1.0.6-0.20230208021445-6cfd7c5ee81a
+	github.com/scyna/core v1.0.8
 	google.golang.org/protobuf v1.28.1
 )
 

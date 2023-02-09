@@ -3,7 +3,7 @@ module ex/customer
 go 1.19
 
 require (
-	github.com/scyna/core v1.0.6-0.20230207135020-4341b42f274b
+	github.com/scyna/core v1.0.8
 	google.golang.org/protobuf v1.28.0
 )
 
