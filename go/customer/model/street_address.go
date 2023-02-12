@@ -36,7 +36,7 @@ type streetAddressBuilder struct {
 	country  string
 }
 
-func NewStreetAddress() *streetAddressBuilder {
+func NewStreetAddressBuilder() *streetAddressBuilder {
 	return &streetAddressBuilder{}
 }
 
