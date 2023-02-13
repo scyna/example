@@ -1,11 +1,13 @@
 package repository
 
 import (
+	"ex/transaction_script/model"
+
 	"github.com/scylladb/gocqlx/v2/qb"
 	scyna "github.com/scyna/core"
 )
 
-func (r *repository) CreateAccount(account *Account) scyna.Error {
+func (r *repository) CreateAccount(account *model.Account) scyna.Error {
 
 	if err := qb.Insert(TABLE_NAME).
 		Columns("id", "name", "email", "password").

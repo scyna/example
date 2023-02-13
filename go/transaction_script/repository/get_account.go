@@ -1,14 +1,14 @@
 package repository
 
 import (
-	"ex/transaction_script/domain"
+	"ex/transaction_script/model"
 
 	"github.com/scylladb/gocqlx/v2/qb"
 	scyna "github.com/scyna/core"
 )
 
-func (r *repository) GetAccount(email string) (*Account, scyna.Error) {
-	var ret Account
+func (r *repository) GetAccount(email string) (*model.Account, scyna.Error) {
+	var ret model.Account
 	if err := qb.Select(TABLE_NAME).
 		Columns("id", "name", "email").
 		Where(qb.Eq("email")).
@@ -16,7 +16,7 @@ func (r *repository) GetAccount(email string) (*Account, scyna.Error) {
 		Bind(email).
 		GetRelease(&ret); err != nil {
 		r.context.Error(err.Error())
-		return nil, domain.ACCOUNT_NOT_EXISTED
+		return nil, model.ACCOUNT_NOT_EXISTED
 	}
 	return &ret, nil
 }

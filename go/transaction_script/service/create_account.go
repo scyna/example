@@ -1,7 +1,7 @@
 package service
 
 import (
-	"ex/transaction_script/domain"
+	"ex/transaction_script/model"
 	"ex/transaction_script/proto"
 	"ex/transaction_script/repository"
 
@@ -12,24 +12,24 @@ import (
 
 func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Logger.Info("Receive CreateAccountRequest")
-	db := repository.LoadRepository(&ctx.Context)
+	repository := repository.LoadRepository(&ctx.Context)
 
 	if validateCreateAccountRequest(request) != nil {
 		return scyna.REQUEST_INVALID
 	}
 
-	if _, err := db.GetAccount(request.Email); err == nil {
-		return domain.ACCOUNT_EXISTED
+	if _, err := repository.GetAccount(request.Email); err == nil {
+		return model.ACCOUNT_EXISTED
 	}
 
-	account := &repository.Account{
+	account := &model.Account{
 		ID:       scyna.ID.Next(),
 		Name:     request.Name,
 		Email:    request.Email,
 		Password: request.Password,
 	}
 
-	if err := db.CreateAccount(account); err != nil {
+	if err := repository.CreateAccount(account); err != nil {
 		return err
 	}
 

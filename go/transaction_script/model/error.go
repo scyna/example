@@ -1,4 +1,4 @@
-package domain
+package model
 
 import (
 	scyna "github.com/scyna/core"

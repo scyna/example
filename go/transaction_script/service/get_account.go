@@ -10,8 +10,8 @@ import (
 func GetAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Logger.Info("Receive GetAccountRequest")
 
-	db := repository.LoadRepository(&ctx.Context)
-	account, err := db.GetAccount(request.Email)
+	repository := repository.LoadRepository(&ctx.Context)
+	account, err := repository.GetAccount(request.Email)
 	if err != nil {
 		return err
 	}
