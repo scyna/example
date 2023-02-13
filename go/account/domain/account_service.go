@@ -1,6 +1,7 @@
 package domain
 
 import (
+	"ex/account/model"
 	"ex/account/repository"
 
 	scyna "github.com/scyna/core"
@@ -16,4 +17,11 @@ func NewAccountService(context *scyna.Context) *accountService {
 		context:    context,
 		Repository: &repository.AccountRepository{LOG: context.Logger},
 	}
+}
+
+func (account *accountService) AssureAccountNotExists(email model.EmailAddress) scyna.Error {
+	if _, err := account.Repository.GetAccountByEmail(email); err == nil {
+		return model.ACCOUNT_EXISTED
+	}
+	return nil
 }
