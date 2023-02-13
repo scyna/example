@@ -1,4 +1,4 @@
-package repository
+package domain
 
 import (
 	scyna "github.com/scyna/core"

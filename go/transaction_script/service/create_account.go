@@ -1,6 +1,7 @@
 package service
 
 import (
+	"ex/transaction_script/domain"
 	"ex/transaction_script/proto"
 	"ex/transaction_script/repository"
 
@@ -18,7 +19,7 @@ func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountReque
 	}
 
 	if _, err := db.GetAccount(request.Email); err == nil {
-		return repository.ACCOUNT_EXISTED
+		return domain.ACCOUNT_EXISTED
 	}
 
 	account := &repository.Account{

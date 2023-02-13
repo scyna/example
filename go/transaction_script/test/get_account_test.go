@@ -1,8 +1,8 @@
 package test
 
 import (
+	"ex/transaction_script/domain"
 	"ex/transaction_script/proto"
-	"ex/transaction_script/repository"
 	"ex/transaction_script/service"
 	"testing"
 
@@ -34,6 +34,6 @@ func TestGetFail(t *testing.T) {
 
 	scyna_test.EndpointTest(service.GET_ACCOUNT_URL).
 		WithRequest(&proto.GetAccountByEmailRequest{Email: "a@gmail.com"}).
-		ExpectError(repository.ACCOUNT_NOT_EXISTED).
+		ExpectError(domain.ACCOUNT_NOT_EXISTED).
 		Run(t)
 }

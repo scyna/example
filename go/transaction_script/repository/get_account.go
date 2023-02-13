@@ -1,6 +1,8 @@
 package repository
 
 import (
+	"ex/transaction_script/domain"
+
 	"github.com/scylladb/gocqlx/v2/qb"
 	scyna "github.com/scyna/core"
 )
@@ -14,7 +16,7 @@ func (r *repository) GetAccount(email string) (*Account, scyna.Error) {
 		Bind(email).
 		GetRelease(&ret); err != nil {
 		r.context.Error(err.Error())
-		return nil, ACCOUNT_NOT_EXISTED
+		return nil, domain.ACCOUNT_NOT_EXISTED
 	}
 	return &ret, nil
 }
