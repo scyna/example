@@ -10,13 +10,13 @@ import (
 func ChangePasswordHandler(ctx *scyna.Endpoint, request *proto.ChangePasswordRequest) scyna.Error {
 	ctx.Logger.Info("Receive ChangePasswordRequest")
 
-	repository := domain.LoadRepository(ctx.Logger)
-	account, ret := repository.GetAccountByID(request.Id)
+	service := domain.NewAccountService(&ctx.Context)
+	account, ret := service.Repository.GetAccountByID(request.Id)
 	if ret != nil {
 		return ret
 	}
 
-	if ret = repository.LoadPassword(account); ret != nil {
+	if ret = service.Repository.LoadPassword(account); ret != nil {
 		return ret
 	}
 
@@ -32,7 +32,7 @@ func ChangePasswordHandler(ctx *scyna.Endpoint, request *proto.ChangePasswordReq
 			Current: request.Current,
 			Future:  request.Future})
 
-	if ret = repository.UpdatePassword(command, account); ret != nil {
+	if ret = service.Repository.UpdatePassword(command, account); ret != nil {
 		return ret
 	}
 

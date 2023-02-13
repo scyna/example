@@ -12,14 +12,14 @@ import (
 func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Logger.Info("Receive CreateAccountRequest")
 
-	repository := domain.LoadRepository(ctx.Logger)
+	service := domain.NewAccountService(&ctx.Context)
 
 	email, ret := model.ParseEmail(request.Email)
 	if ret != nil {
 		return ret
 	}
 
-	if ret = domain.AssureAccountNotExists(repository, email); ret != nil {
+	if ret = service.AssureAccountNotExists(email); ret != nil {
 		return ret
 	}
 
@@ -43,7 +43,7 @@ func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountReque
 			Name:  account.Name,
 			Email: account.Email.String()})
 
-	if ret = repository.CreateAccount(command, &account); ret != nil {
+	if ret = service.Repository.CreateAccount(command, &account); ret != nil {
 		return ret
 	}
 

@@ -6,10 +6,10 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func (r *accountRepository) LoadPassword(account *model.Account) scyna.Error {
+func (r *AccountRepository) LoadPassword(account *model.Account) scyna.Error {
 	return nil
 }
 
-func (r *accountRepository) UpdatePassword(cmd *scyna.Command, account *model.Account) scyna.Error {
+func (r *AccountRepository) UpdatePassword(cmd *scyna.Command, account *model.Account) scyna.Error {
 	return nil
 }

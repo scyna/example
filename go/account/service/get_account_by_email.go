@@ -12,14 +12,14 @@ import (
 func GetAccountByEmailHandler(ctx *scyna.Endpoint, request *proto.GetAccountByEmailRequest) scyna.Error {
 	ctx.Logger.Info("Receive GetAccountRequest")
 
-	repository := domain.LoadRepository(ctx.Logger)
+	service := domain.NewAccountService(&ctx.Context)
 
 	email, ret := model.ParseEmail(request.Email)
 	if ret != nil {
 		return ret
 	}
 
-	account, ret := repository.GetAccountByEmail(email)
+	account, ret := service.Repository.GetAccountByEmail(email)
 	if ret != nil {
 		return ret
 	}

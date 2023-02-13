@@ -4,8 +4,6 @@ import (
 	"os"
 	"testing"
 
-	"ex/account/domain"
-	"ex/account/repository"
 	"ex/account/service"
 
 	scyna "github.com/scyna/core"
@@ -15,7 +13,6 @@ import (
 func TestMain(m *testing.M) {
 	scyna_test.Init("scyna_test")
 	scyna.InitSingleWriter("ex_account")
-	domain.AttachRepositoryCreator(repository.NewRepository)
 
 	/*register services*/
 	scyna.RegisterEndpoint(service.CREATE_ACCOUNT_URL, service.CreateAccountHandler)

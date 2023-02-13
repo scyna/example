@@ -9,7 +9,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func (r *accountRepository) GetAccountByEmail(email model.EmailAddress) (*model.Account, scyna.Error) {
+func (r *AccountRepository) GetAccountByEmail(email model.EmailAddress) (*model.Account, scyna.Error) {
 
 	var account struct {
 		ID    uint64 `db:"id"`

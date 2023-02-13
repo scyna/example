@@ -7,7 +7,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func (r *accountRepository) GetAccountByID(ID uint64) (*model.Account, scyna.Error) {
+func (r *AccountRepository) GetAccountByID(ID uint64) (*model.Account, scyna.Error) {
 
 	var account struct {
 		ID    uint64 `db:"id"`
