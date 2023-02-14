@@ -1,7 +1,7 @@
 package test
 
 import (
-	"ex/transaction_script/domain"
+	"ex/transaction_script/model"
 	"ex/transaction_script/proto"
 	"ex/transaction_script/service"
 	"testing"
@@ -26,8 +26,7 @@ func TestCreateShouldReturnSuccess(t *testing.T) {
 			Name:     "Nguyen Van A",
 			Password: "1234565",
 		}).
-		ExpectError(domain.ACCOUNT_EXISTED).Run(t)
-
+		ExpectError(model.ACCOUNT_EXISTED).Run(t)
 }
 
 func TestCreateBadEmail(t *testing.T) {
