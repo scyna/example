@@ -33,9 +33,7 @@ func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountReque
 		return err
 	}
 
-	ctx.Response(&proto.CreateAccountResponse{Id: account.ID})
-
-	return scyna.OK
+	return ctx.OK(&proto.CreateAccountResponse{Id: account.ID})
 }
 
 func validateCreateAccountRequest(request *proto.CreateAccountRequest) error {

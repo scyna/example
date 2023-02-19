@@ -16,10 +16,9 @@ func GetAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest)
 		return err
 	}
 
-	ctx.Response(&proto.GetAccountResponse{
+	return ctx.OK(&proto.GetAccountResponse{
 		Id:    account.ID,
 		Name:  account.Name,
 		Email: account.Email,
 	})
-	return nil
 }

@@ -14,8 +14,7 @@ func HelloHandler(ctx *scyna.Endpoint, request *proto.HelloRequest) scyna.Error 
 		return scyna.REQUEST_INVALID
 	}
 
-	ctx.Response(&proto.HelloResponse{Content: "Hello " + request.Name})
-	return scyna.OK
+	return ctx.OK(&proto.HelloResponse{Content: "Hello " + request.Name})
 }
 
 func validateHelloRequest(request *proto.HelloRequest) error {

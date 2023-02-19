@@ -8,8 +8,8 @@ github.com/nats-io/nats-server/v2 v2.8.2/go.mod h1:vIdpKz3OG+DCg4q/xVPdXHoztEyKD
 github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e/go.mod h1:pJLUxLENpZxwdsKMEsNbx1VGcRFpLqf3715MtcvvzbA=
 github.com/rogpeppe/go-internal v1.6.1/go.mod h1:xXDCJY+GAPziupqXw64V24skbSoqbTEfhy4qGm1nDQc=
 github.com/rogpeppe/go-internal v1.8.0/go.mod h1:WmiCO8CzOY8rg0OYDC4/i/2WRWAB6poM+XZ2dLUbcbE=
-github.com/scyna/core v1.0.8 h1:mBYAU4p388sEW+OXE5kvDnkW3LSV7i81mxcqsh/D9QI=
-github.com/scyna/core v1.0.8/go.mod h1:QAS41shlVGFUYHM8OMMizsBY+dkAWz8quSfsa6OLqmg=
+github.com/scyna/core v1.1.4 h1:3Q36AWrdwSi7jzEyL3BPxtwa4jJjhAUILWQfBCApVqk=
+github.com/scyna/core v1.1.4/go.mod h1:QAS41shlVGFUYHM8OMMizsBY+dkAWz8quSfsa6OLqmg=
 golang.org/x/sys v0.0.0-20220422013727-9388b58f7150/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/time v0.2.0/go.mod h1:tRJNPiyCQ0inRvYxbN9jk5I+vvW/OXSQhTDSoE431IQ=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=

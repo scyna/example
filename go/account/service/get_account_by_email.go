@@ -24,12 +24,10 @@ func GetAccountByEmailHandler(ctx *scyna.Endpoint, request *proto.GetAccountByEm
 		return ret
 	}
 
-	ctx.Response(&proto.GetAccountResponse{
+	return ctx.OK(&proto.GetAccountResponse{
 		Id:    account.ID,
 		Email: account.Email.String(),
 		Name:  account.Name,
 		/*TODO*/
 	})
-
-	return scyna.OK
 }

@@ -51,7 +51,5 @@ func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountReque
 		return ret
 	}
 
-	ctx.Response(&proto.CreateAccountResponse{Id: account.ID})
-
-	return scyna.OK
+	return ctx.OK(&proto.CreateAccountResponse{Id: account.ID})
 }
