@@ -5,4 +5,5 @@ use (
 	./go/account
 	./go/customer
 	./go/transaction_script
+	./go/vertical_slide
 )
