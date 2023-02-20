@@ -1,7 +1,7 @@
 package main
 
 import (
-	"vertical_slide/account/features/create_account"
+	"ex/vertical_slide/features/create_account"
 
 	scyna_setup "github.com/scyna/core/setup"
 )

@@ -32,7 +32,7 @@ func TestCreateShouldReturnSuccess(t *testing.T) {
 func TestCreateBadEmail(t *testing.T) {
 	cleanup()
 	scyna_test.EndpointTest(service.CREATE_ACCOUNT_URL).
-		WithRequest(&proto.GetAccountResponse{
+		WithRequest(&proto.CreateAccountRequest{
 			Email: "a+gmail.com",
 			Name:  "Nguyen Van A",
 		}).

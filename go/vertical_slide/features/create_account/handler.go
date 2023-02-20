@@ -1,7 +1,7 @@
 package create_account
 
 import (
-	"ex/account/proto"
+	"ex/vertical_slide/proto"
 
 	validation "github.com/go-ozzo/ozzo-validation"
 	"github.com/go-ozzo/ozzo-validation/is"

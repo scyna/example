@@ -1,4 +1,4 @@
-module vertical_slide/account
+module ex/vertical_slide
 
 go 1.19
 

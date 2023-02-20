@@ -1,9 +1,8 @@
 package test
 
 import (
-	"ex/transaction_script/model"
-	"ex/transaction_script/proto"
-	"ex/transaction_script/service"
+	"ex/vertical_slide/features/create_account"
+	"ex/vertical_slide/proto"
 	"testing"
 
 	scyna "github.com/scyna/core"
@@ -12,7 +11,7 @@ import (
 
 func TestCreateShouldReturnSuccess(t *testing.T) {
 	cleanup()
-	scyna_test.EndpointTest(service.CREATE_ACCOUNT_URL).
+	scyna_test.EndpointTest(create_account.URL).
 		WithRequest(&proto.CreateAccountRequest{
 			Email:    "a@gmail.com",
 			Name:     "Nguyen Van A",
@@ -20,19 +19,19 @@ func TestCreateShouldReturnSuccess(t *testing.T) {
 		}).
 		ExpectSuccess().Run(t)
 
-	scyna_test.EndpointTest(service.CREATE_ACCOUNT_URL).
+	scyna_test.EndpointTest(create_account.URL).
 		WithRequest(&proto.CreateAccountRequest{
 			Email:    "a@gmail.com",
 			Name:     "Nguyen Van A",
 			Password: "1234565",
 		}).
-		ExpectError(model.ACCOUNT_EXISTED).Run(t)
+		ExpectError(create_account.ACCOUNT_EXISTED).Run(t)
 }
 
 func TestCreateBadEmail(t *testing.T) {
 	cleanup()
-	scyna_test.EndpointTest(service.CREATE_ACCOUNT_URL).
-		WithRequest(&proto.GetAccountResponse{
+	scyna_test.EndpointTest(create_account.URL).
+		WithRequest(&proto.CreateAccountRequest{
 			Email: "a+gmail.com",
 			Name:  "Nguyen Van A",
 		}).
