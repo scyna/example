@@ -10,7 +10,7 @@ import (
 
 func CreateCustomerHandler(ctx *scyna.Endpoint, request *proto.CreateCustomerRequest) scyna.Error {
 	var ret scyna.Error
-	repository := domain.LoadRepository(ctx.Logger)
+	repository := domain.LoadRepository(ctx)
 	customer := model.Customer{ID: model.CustomerID(domain.OneID.Next())}
 
 	if customer.Identity, ret = model.NewIdentity(request.IDType, request.IDNumber); ret != nil {

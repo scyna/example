@@ -8,7 +8,7 @@ import (
 )
 
 func ChangePasswordHandler(ctx *scyna.Endpoint, request *proto.ChangePasswordRequest) scyna.Error {
-	ctx.Logger.Info("Receive ChangePasswordRequest")
+	ctx.Info("Receive ChangePasswordRequest")
 
 	service := domain.NewAccountService(&ctx.Context)
 	account, ret := service.Repository.GetAccountByID(request.Id)

@@ -6,7 +6,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-const URL = "/account/create"
+const URL = "/account/change-password"
 
 func Handler(ctx *scyna.Endpoint, request *proto.ChangePasswordRequest) scyna.Error {
 	ctx.Info("Receive ChangePasswordRequest")

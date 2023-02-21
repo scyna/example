@@ -10,9 +10,9 @@ import (
 const URL = "/account/get"
 
 func Handler(ctx *scyna.Endpoint, request *proto.GetAccountByEmailRequest) scyna.Error {
-	ctx.Logger.Info("Receive GetAccountRequest")
+	ctx.Info("Receive GetAccountRequest")
 
-	repository := repository.NewBaseRepository(&ctx.Logger)
+	repository := repository.NewBaseRepository(ctx)
 	account, err := repository.GetAccount(request.Email)
 	if err != nil {
 		return err

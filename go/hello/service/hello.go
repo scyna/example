@@ -8,7 +8,7 @@ import (
 )
 
 func HelloHandler(ctx *scyna.Endpoint, request *proto.HelloRequest) scyna.Error {
-	ctx.Logger.Info("Receive HelloRequest")
+	ctx.Info("Receive HelloRequest")
 
 	if err := validateHelloRequest(request); err != nil {
 		return scyna.REQUEST_INVALID

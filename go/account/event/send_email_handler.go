@@ -9,6 +9,6 @@ import (
 )
 
 func SendEmailHandler(ctx *scyna.Context, event *proto.SendEmailTask) {
-	ctx.Logger.Info("Receive SendEmailTask")
+	ctx.Info("Receive SendEmailTask")
 	log.Print(event)
 }

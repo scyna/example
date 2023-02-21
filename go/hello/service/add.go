@@ -7,7 +7,7 @@ import (
 )
 
 func AddHandler(ctx *scyna.Endpoint, request *proto.AddRequest) scyna.Error {
-	ctx.Logger.Info("Receive AddRequest")
+	ctx.Info("Receive AddRequest")
 
 	sum := request.A + request.B
 	if sum > 100 {

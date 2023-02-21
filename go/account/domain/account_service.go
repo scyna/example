@@ -15,7 +15,7 @@ type accountService struct {
 func NewAccountService(context *scyna.Context) *accountService {
 	return &accountService{
 		context:    context,
-		Repository: &repository.AccountRepository{LOG: context.Logger},
+		Repository: &repository.AccountRepository{LOG: context},
 	}
 }
 

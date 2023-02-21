@@ -15,7 +15,7 @@ func (r *repository) GetAccount(email string) (*model.Account, scyna.Error) {
 		Query(scyna.DB).
 		Bind(email).
 		GetRelease(&ret); err != nil {
-		r.context.Error(err.Error())
+		r.LOG.Error(err.Error())
 		return nil, model.ACCOUNT_NOT_EXISTED
 	}
 	return &ret, nil

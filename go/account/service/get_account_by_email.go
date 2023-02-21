@@ -10,7 +10,7 @@ import (
 )
 
 func GetAccountByEmailHandler(ctx *scyna.Endpoint, request *proto.GetAccountByEmailRequest) scyna.Error {
-	ctx.Logger.Info("Receive GetAccountRequest")
+	ctx.Info("Receive GetAccountRequest")
 
 	service := domain.NewAccountService(&ctx.Context)
 

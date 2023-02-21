@@ -11,7 +11,7 @@ type Repository struct {
 	repository.BaseRepository
 }
 
-func NewRepository(LOG *scyna.Logger) *Repository {
+func NewRepository(LOG scyna.Logger) *Repository {
 	return &Repository{
 		BaseRepository: *repository.NewBaseRepository(LOG),
 	}

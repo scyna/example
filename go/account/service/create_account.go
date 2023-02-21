@@ -10,7 +10,7 @@ import (
 )
 
 func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
-	ctx.Logger.Info("Receive CreateAccountRequest")
+	ctx.Info("Receive CreateAccountRequest")
 
 	service := domain.NewAccountService(&ctx.Context)
 
@@ -24,14 +24,14 @@ func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountReque
 	}
 
 	account := model.Account{
-		LOG:   ctx.Logger,
+		LOG:   ctx,
 		ID:    scyna.ID.Next(),
 		Email: email,
 		Name:  request.Name, /*TODO: check name*/
 	}
 
 	if account.Password, ret = model.ParsePassword(request.Password); ret != nil {
-		ctx.Logger.Error("wrong password")
+		ctx.Error("wrong password")
 		return ret
 	}
 

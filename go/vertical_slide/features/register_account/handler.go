@@ -16,7 +16,7 @@ func Handler(ctx *scyna.Endpoint, request *proto.RegisterAccountRequest) scyna.E
 		return scyna.REQUEST_INVALID
 	}
 
-	repository := NewRepository(&ctx.Logger)
+	repository := NewRepository(ctx)
 
 	if _, err := repository.GetAccount(request.Email); err == nil {
 		return model.ACCOUNT_EXISTED

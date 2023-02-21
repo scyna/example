@@ -11,7 +11,7 @@ import (
 )
 
 func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
-	ctx.Logger.Info("Receive CreateAccountRequest")
+	ctx.Info("Receive CreateAccountRequest")
 	repository := repository.LoadRepository(&ctx.Context)
 
 	if validateCreateAccountRequest(request) != nil {

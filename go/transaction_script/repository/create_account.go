@@ -14,7 +14,7 @@ func (r *repository) CreateAccount(account *model.Account) scyna.Error {
 		Query(scyna.DB).
 		BindStruct(account).
 		ExecRelease(); err != nil {
-		r.context.Error(err.Error())
+		r.LOG.Error(err.Error())
 		return scyna.SERVER_ERROR
 	}
 	return nil
