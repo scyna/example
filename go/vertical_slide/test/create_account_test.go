@@ -2,7 +2,8 @@ package test
 
 import (
 	"ex/vertical_slide/features/create_account"
-	"ex/vertical_slide/proto"
+	"ex/vertical_slide/shared/model"
+	"ex/vertical_slide/shared/proto"
 	"testing"
 
 	scyna "github.com/scyna/core"
@@ -25,7 +26,7 @@ func TestCreateShouldReturnSuccess(t *testing.T) {
 			Name:     "Nguyen Van A",
 			Password: "1234565",
 		}).
-		ExpectError(create_account.ACCOUNT_EXISTED).Run(t)
+		ExpectError(model.ACCOUNT_EXISTED).Run(t)
 }
 
 func TestCreateBadEmail(t *testing.T) {

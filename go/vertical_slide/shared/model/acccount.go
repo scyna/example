@@ -1,4 +1,4 @@
-package create_account
+package model
 
 type Account struct {
 	ID       uint64 `db:"id"`
