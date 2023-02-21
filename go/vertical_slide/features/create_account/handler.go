@@ -3,7 +3,6 @@ package create_account
 import (
 	"ex/vertical_slide/shared/model"
 	"ex/vertical_slide/shared/proto"
-	"ex/vertical_slide/shared/repository"
 
 	scyna "github.com/scyna/core"
 )
@@ -17,7 +16,7 @@ func Handler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Err
 		return scyna.REQUEST_INVALID
 	}
 
-	repository := repository.LoadRepository(&ctx.Context)
+	repository := NewRepository(&ctx.Logger)
 
 	if _, err := repository.GetAccount(request.Email); err == nil {
 		return model.ACCOUNT_EXISTED

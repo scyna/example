@@ -12,7 +12,7 @@ const URL = "/account/get"
 func Handler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Logger.Info("Receive GetAccountRequest")
 
-	repository := repository.LoadRepository(&ctx.Context)
+	repository := repository.NewBaseRepository(&ctx.Logger)
 	account, err := repository.GetAccount(request.Email)
 	if err != nil {
 		return err

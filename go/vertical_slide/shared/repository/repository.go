@@ -4,10 +4,10 @@ import scyna "github.com/scyna/core"
 
 const ACCOUNT_TABLE = "ex_account.account"
 
-type repository struct {
-	context *scyna.Context
+type BaseRepository struct {
+	LOG *scyna.Logger
 }
 
-func LoadRepository(context *scyna.Context) *repository {
-	return &repository{context: context}
+func NewBaseRepository(LOG *scyna.Logger) *BaseRepository {
+	return &BaseRepository{LOG: LOG}
 }
