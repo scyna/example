@@ -13,7 +13,7 @@ func main() {
 		Build()
 
 	scyna_setup.NewClient("account_test", "123456").
-		UseEndpoint(register_account.URL).
+		UseEndpoint(register_account.Path).
 		//UseEndpoint(service.GET_ACCOUNT_URL).
 		Build()
 

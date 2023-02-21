@@ -14,7 +14,7 @@ func TestGetAccount_Success(t *testing.T) {
 	cleanup()
 
 	var response proto.RegisterAccountResponse
-	scyna_test.EndpointTest(register_account.URL).
+	scyna_test.EndpointTest(register_account.Path).
 		WithRequest(&proto.RegisterAccountRequest{
 			Email:    "a@gmail.com",
 			Name:     "Nguyen Van A",
@@ -22,7 +22,7 @@ func TestGetAccount_Success(t *testing.T) {
 		}).
 		ExpectSuccess().Run(t, &response)
 
-	scyna_test.EndpointTest(get_account.URL).
+	scyna_test.EndpointTest(get_account.Path).
 		WithRequest(&proto.GetAccountByEmailRequest{
 			Email: "a@gmail.com",
 		}).
@@ -36,7 +36,7 @@ func TestGetAccount_Success(t *testing.T) {
 func TestGetAccount_NotExists(t *testing.T) {
 	cleanup()
 
-	scyna_test.EndpointTest(get_account.URL).
+	scyna_test.EndpointTest(get_account.Path).
 		WithRequest(&proto.GetAccountByEmailRequest{
 			Email: "a@gmail.com",
 		}).
