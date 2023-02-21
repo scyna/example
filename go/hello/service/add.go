@@ -6,7 +6,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func AddHandler(ctx *scyna.Endpoint, request *proto.AddRequest) scyna.Error {
+func AddHandler(ctx *scyna.Context, request *proto.AddRequest) scyna.Error {
 	ctx.Info("Receive AddRequest")
 
 	sum := request.A + request.B

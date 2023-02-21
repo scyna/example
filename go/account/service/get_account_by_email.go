@@ -9,10 +9,10 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func GetAccountByEmailHandler(ctx *scyna.Endpoint, request *proto.GetAccountByEmailRequest) scyna.Error {
+func GetAccountByEmailHandler(ctx *scyna.Context, request *proto.GetAccountByEmailRequest) scyna.Error {
 	ctx.Info("Receive GetAccountRequest")
 
-	service := domain.NewAccountService(&ctx.Context)
+	service := domain.NewAccountService(ctx)
 
 	email, ret := model.ParseEmail(request.Email)
 	if ret != nil {

@@ -9,7 +9,7 @@ import (
 
 const Path = "/account/get"
 
-func Handler(ctx *scyna.Endpoint, request *proto.GetAccountByEmailRequest) scyna.Error {
+func Handler(ctx *scyna.Context, request *proto.GetAccountByEmailRequest) scyna.Error {
 	ctx.Info("Receive GetAccountRequest")
 
 	repository := repository.NewBaseRepository(ctx)

@@ -10,9 +10,9 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
+func CreateAccountHandler(ctx *scyna.Context, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Info("Receive CreateAccountRequest")
-	repository := repository.LoadRepository(&ctx.Context)
+	repository := repository.LoadRepository(ctx)
 
 	if validateCreateAccountRequest(request) != nil {
 		return scyna.REQUEST_INVALID

@@ -9,10 +9,10 @@ import (
 	proto "ex/account/proto"
 )
 
-func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
+func CreateAccountHandler(ctx *scyna.Context, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Info("Receive CreateAccountRequest")
 
-	service := domain.NewAccountService(&ctx.Context)
+	service := domain.NewAccountService(ctx)
 
 	email, ret := model.ParseEmail(request.Email)
 	if ret != nil {
@@ -35,7 +35,7 @@ func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountReque
 		return ret
 	}
 
-	command := scyna.NewCommand(&ctx.Context).
+	command := scyna.NewCommand(ctx).
 		SetAggregateID(account.ID).
 		SetChannel(ACCOUNT_CREATED_CHANNEL).
 		SetEvent(&proto.AccountCreated{

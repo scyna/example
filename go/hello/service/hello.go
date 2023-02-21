@@ -7,7 +7,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func HelloHandler(ctx *scyna.Endpoint, request *proto.HelloRequest) scyna.Error {
+func HelloHandler(ctx *scyna.Context, request *proto.HelloRequest) scyna.Error {
 	ctx.Info("Receive HelloRequest")
 
 	if err := validateHelloRequest(request); err != nil {
