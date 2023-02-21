@@ -13,7 +13,7 @@ func TestMain(m *testing.M) {
 	scyna_test.Init("scyna_test")
 
 	/*register services*/
-	scyna.RegisterEndpoint(create_account.URL, create_account.CreateAccountHandler)
+	scyna.RegisterEndpoint(create_account.URL, create_account.Handler)
 
 	exitVal := m.Run()
 	cleanup()

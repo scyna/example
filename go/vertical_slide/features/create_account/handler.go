@@ -10,7 +10,7 @@ import (
 
 const URL = "/account/create"
 
-func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
+func Handler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Info("Receive CreateAccountRequest")
 
 	if validateRequest(request) != nil {

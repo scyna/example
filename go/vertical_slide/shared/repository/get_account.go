@@ -9,7 +9,7 @@ import (
 
 func (r *repository) GetAccount(email string) (*model.Account, scyna.Error) {
 	var ret model.Account
-	if err := qb.Select(TABLE_NAME).
+	if err := qb.Select(ACCOUNT_TABLE).
 		Columns("id", "name", "email").
 		Where(qb.Eq("email")).
 		Query(scyna.DB).

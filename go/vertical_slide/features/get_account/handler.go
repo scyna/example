@@ -7,9 +7,9 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-const URL = "/account/create"
+const URL = "/account/get"
 
-func GetAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
+func Handler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Logger.Info("Receive GetAccountRequest")
 
 	repository := repository.LoadRepository(&ctx.Context)

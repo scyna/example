@@ -9,7 +9,7 @@ import (
 
 func (r *repository) CreateAccount(account *model.Account) scyna.Error {
 
-	if err := qb.Insert(TABLE_NAME).
+	if err := qb.Insert(ACCOUNT_TABLE).
 		Columns("id", "name", "email", "password").
 		Query(scyna.DB).
 		BindStruct(account).
