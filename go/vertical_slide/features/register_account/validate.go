@@ -1,4 +1,4 @@
-package create_account
+package register_account
 
 import (
 	"ex/vertical_slide/shared/proto"
@@ -7,7 +7,7 @@ import (
 	"github.com/go-ozzo/ozzo-validation/is"
 )
 
-func validateRequest(request *proto.CreateAccountRequest) error {
+func validateRequest(request *proto.RegisterAccountRequest) error {
 	return validation.ValidateStruct(request,
 		validation.Field(&request.Email, validation.Required, is.Email),
 		validation.Field(&request.Name, validation.Required, validation.Length(1, 150)),

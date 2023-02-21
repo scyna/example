@@ -3,63 +3,60 @@ option java_multiple_files = true;
 option csharp_namespace = "proto";
 option  go_package = ".;proto";
 
-/*CREATE*/
-message CreateAccountRequest{
-  string email = 1;
-  string name = 2;
-  string password = 3;
+message RegisterAccountRequest{
+  string Email = 1;
+  string Name = 2;
+  string Password = 3;
 }
 
-message CreateAccountResponse {
-  uint64 id = 1;
+message RegisterAccountResponse {
+  uint64 ID = 1;
 }
 
 message AccountCreated{
-  uint64 id = 1;
-  string email = 2;
-  string name = 3;
+  uint64 ID = 1;
+  string Email = 2;
+  string Name = 3;
 }
 
-/*GET*/
 message GetAccountByEmailRequest {
-  string email = 1;
+  string Email = 1;
 }
 
 message GetAccountByIDRequest {
-  uint64 id = 1;
+  uint64 ID = 1;
 }
 
 message GetAccountResponse {
-  uint64 id = 1;
-  string email = 2;
-  string name = 3;
+  uint64 ID = 1;
+  string Email = 2;
+  string Name = 3;
 }
 
-
 message ChangePasswordRequest {
-  uint64 id = 1;
-  string current = 2;
-  string future = 3;
+  uint64 ID = 1;
+  string Current = 2;
+  string Future = 3;
 }
 
 message PasswordChanged{
-  uint64 id = 1;
-  string current = 2;
-  string future = 3;
+  uint64 ID = 1;
+  string Current = 2;
+  string Future = 3;
 }
 
 message AuthenticateRequest{
-  string email = 1;
-  string password = 2;
+  string Email = 1;
+  string Password = 2;
 }
 
 message AuthenticateResponse{
-  string host = 1;
-  uint32 port = 2;
+  string Host = 1;
+  uint32 Port = 2;
   /*something*/
 }
 
 message SendEmailTask{
-  string email = 1;
-  string content = 2;
+  string Email = 1;
+  string Content = 2;
 }

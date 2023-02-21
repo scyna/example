@@ -1,8 +1,8 @@
 package test
 
 import (
-	"ex/vertical_slide/features/create_account"
 	"ex/vertical_slide/features/get_account"
+	"ex/vertical_slide/features/register_account"
 	"ex/vertical_slide/shared/model"
 	"ex/vertical_slide/shared/proto"
 	"testing"
@@ -13,9 +13,9 @@ import (
 func TestGetAccount_Success(t *testing.T) {
 	cleanup()
 
-	var response proto.CreateAccountResponse
-	scyna_test.EndpointTest(create_account.URL).
-		WithRequest(&proto.CreateAccountRequest{
+	var response proto.RegisterAccountResponse
+	scyna_test.EndpointTest(register_account.URL).
+		WithRequest(&proto.RegisterAccountRequest{
 			Email:    "a@gmail.com",
 			Name:     "Nguyen Van A",
 			Password: "1234565",
@@ -27,7 +27,7 @@ func TestGetAccount_Success(t *testing.T) {
 			Email: "a@gmail.com",
 		}).
 		ExpectResponse(&proto.GetAccountResponse{
-			Id:    response.Id,
+			ID:    response.ID,
 			Email: "a@gmail.com",
 			Name:  "Nguyen Van A",
 		}).Run(t)

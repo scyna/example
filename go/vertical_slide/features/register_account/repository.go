@@ -1,4 +1,4 @@
-package create_account
+package register_account
 
 import (
 	"ex/vertical_slide/shared/model"

@@ -1,4 +1,4 @@
-package create_account
+package register_account
 
 import (
 	"ex/vertical_slide/shared/model"
@@ -9,7 +9,7 @@ import (
 
 const URL = "/account/create"
 
-func Handler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
+func Handler(ctx *scyna.Endpoint, request *proto.RegisterAccountRequest) scyna.Error {
 	ctx.Info("Receive CreateAccountRequest")
 
 	if validateRequest(request) != nil {
@@ -33,5 +33,5 @@ func Handler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Err
 		return err
 	}
 
-	return ctx.OK(&proto.CreateAccountResponse{Id: account.ID})
+	return ctx.OK(&proto.RegisterAccountResponse{ID: account.ID})
 }
