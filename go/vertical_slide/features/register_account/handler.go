@@ -7,7 +7,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-const Path = "/account/create"
+const Path = "/account/register"
 
 func Handler(ctx *scyna.Endpoint, request *proto.RegisterAccountRequest) scyna.Error {
 	ctx.Info("Receive RegisterAccountRequest")
