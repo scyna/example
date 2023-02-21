@@ -2,6 +2,7 @@ package test
 
 import (
 	"ex/vertical_slide/features/create_account"
+	"ex/vertical_slide/features/get_account"
 	"os"
 	"testing"
 
@@ -14,6 +15,7 @@ func TestMain(m *testing.M) {
 
 	/*register services*/
 	scyna.RegisterEndpoint(create_account.URL, create_account.Handler)
+	scyna.RegisterEndpoint(get_account.URL, get_account.Handler)
 
 	exitVal := m.Run()
 	cleanup()
