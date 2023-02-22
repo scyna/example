@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "account", "account\account.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "account_test", "account_test\account_test.csproj", "{F9A61CD0-EA23-4583-AD5E-472011A10999}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vertical_slide", "vertical_slide\vertical_slide.csproj", "{3C9B5376-2D60-44E4-AF00-58E7140067CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vertical_slice", "vertical_slice\vertical_slice.csproj", "{3C9B5376-2D60-44E4-AF00-58E7140067CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
