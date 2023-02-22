@@ -7,7 +7,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-const Path = "/account/get"
+const PATH = "/account/get"
 
 func Handler(ctx scyna.Context, request *proto.GetAccountByEmailRequest) scyna.Error {
 	ctx.Info("Receive GetAccountRequest")

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"ex/vertical_slide/features/get_account"
 	"ex/vertical_slide/features/register_account"
 
 	scyna_setup "github.com/scyna/core/setup"
@@ -13,8 +14,8 @@ func main() {
 		Build()
 
 	scyna_setup.NewClient("account_test", "123456").
-		UseEndpoint(register_account.Path).
-		//UseEndpoint(service.GET_ACCOUNT_URL).
+		UseEndpoint(register_account.PATH).
+		UseEndpoint(get_account.PATH).
 		Build()
 
 }

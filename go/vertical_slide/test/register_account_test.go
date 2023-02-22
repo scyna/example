@@ -12,7 +12,7 @@ import (
 
 func TestRegisterAccount_Success(t *testing.T) {
 	cleanup()
-	scyna_test.EndpointTest(register_account.Path).
+	scyna_test.EndpointTest(register_account.PATH).
 		WithRequest(&proto.RegisterAccountRequest{
 			Email:    "a@gmail.com",
 			Name:     "Nguyen Van A",
@@ -23,7 +23,7 @@ func TestRegisterAccount_Success(t *testing.T) {
 
 func TestRegisterAccount_Duplicated(t *testing.T) {
 	cleanup()
-	scyna_test.EndpointTest(register_account.Path).
+	scyna_test.EndpointTest(register_account.PATH).
 		WithRequest(&proto.RegisterAccountRequest{
 			Email:    "a@gmail.com",
 			Name:     "Nguyen Van A",
@@ -31,7 +31,7 @@ func TestRegisterAccount_Duplicated(t *testing.T) {
 		}).
 		ExpectSuccess().Run(t)
 
-	scyna_test.EndpointTest(register_account.Path).
+	scyna_test.EndpointTest(register_account.PATH).
 		WithRequest(&proto.RegisterAccountRequest{
 			Email:    "a@gmail.com",
 			Name:     "Nguyen Van A",
@@ -42,7 +42,7 @@ func TestRegisterAccount_Duplicated(t *testing.T) {
 
 func TestRegisterAccount_BadEmail(t *testing.T) {
 	cleanup()
-	scyna_test.EndpointTest(register_account.Path).
+	scyna_test.EndpointTest(register_account.PATH).
 		WithRequest(&proto.RegisterAccountRequest{
 			Email: "a+gmail.com",
 			Name:  "Nguyen Van A",

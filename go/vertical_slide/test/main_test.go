@@ -14,8 +14,8 @@ func TestMain(m *testing.M) {
 	scyna_test.Init("scyna_test")
 
 	/*register services*/
-	scyna.RegisterEndpoint(register_account.Path, register_account.Handler)
-	scyna.RegisterEndpoint(get_account.Path, get_account.Handler)
+	scyna.RegisterEndpoint(register_account.PATH, register_account.Handler)
+	scyna.RegisterEndpoint(get_account.PATH, get_account.Handler)
 
 	exitVal := m.Run()
 	cleanup()
