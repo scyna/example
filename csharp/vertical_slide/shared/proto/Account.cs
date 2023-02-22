@@ -24,34 +24,34 @@ namespace ex.vsa.proto {
     static AccountReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1hY2NvdW50LnByb3RvEhdpby5zY3luYS5jdXN0b21lci5wcm90byJFChRD",
-            "cmVhdGVBY2NvdW50UmVxdWVzdBINCgVlbWFpbBgBIAEoCRIMCgRuYW1lGAIg",
-            "ASgJEhAKCHBhc3N3b3JkGAMgASgJIiMKFUNyZWF0ZUFjY291bnRSZXNwb25z",
-            "ZRIKCgJpZBgBIAEoBCJiCg5BY2NvdW50Q3JlYXRlZBIPCgJpZBgBIAEoBEgA",
-            "iAEBEhIKBWVtYWlsGAIgASgJSAGIAQESEQoEbmFtZRgDIAEoCUgCiAEBQgUK",
-            "A19pZEIICgZfZW1haWxCBwoFX25hbWUiKQoYR2V0QWNjb3VudEJ5RW1haWxS",
-            "ZXF1ZXN0Eg0KBWVtYWlsGAEgASgJIiMKFUdldEFjY291bnRCeUlEUmVxdWVz",
-            "dBIKCgJpZBgBIAEoBCI9ChJHZXRBY2NvdW50UmVzcG9uc2USCgoCaWQYASAB",
-            "KAQSDQoFZW1haWwYAiABKAkSDAoEbmFtZRgDIAEoCSJEChVDaGFuZ2VQYXNz",
-            "d29yZFJlcXVlc3QSCgoCaWQYASABKAQSDwoHY3VycmVudBgCIAEoCRIOCgZm",
-            "dXR1cmUYAyABKAkiPgoPUGFzc3dvcmRDaGFuZ2VkEgoKAmlkGAEgASgEEg8K",
-            "B2N1cnJlbnQYAiABKAkSDgoGZnV0dXJlGAMgASgJIjYKE0F1dGhlbnRpY2F0",
-            "ZVJlcXVlc3QSDQoFZW1haWwYASABKAkSEAoIcGFzc3dvcmQYAiABKAkiMgoU",
-            "QXV0aGVudGljYXRlUmVzcG9uc2USDAoEaG9zdBgBIAEoCRIMCgRwb3J0GAIg",
-            "ASgNIi8KDVNlbmRFbWFpbFRhc2sSDQoFZW1haWwYASABKAkSDwoHY29udGVu",
-            "dBgCIAEoCUIsChlpby5zY3luYS5leC5hY2NvdW50LnByb3RvUAGqAgxleC52",
-            "c2EucHJvdG9iBnByb3RvMw=="));
+            "Cg1hY2NvdW50LnByb3RvEhdpby5zY3luYS5jdXN0b21lci5wcm90byJHChZS",
+            "ZWdpc3RlckFjY291bnRSZXF1ZXN0Eg0KBUVtYWlsGAEgASgJEgwKBE5hbWUY",
+            "AiABKAkSEAoIUGFzc3dvcmQYAyABKAkiJQoXUmVnaXN0ZXJBY2NvdW50UmVz",
+            "cG9uc2USCgoCSUQYASABKAQiYgoOQWNjb3VudENyZWF0ZWQSDwoCSUQYASAB",
+            "KARIAIgBARISCgVFbWFpbBgCIAEoCUgBiAEBEhEKBE5hbWUYAyABKAlIAogB",
+            "AUIFCgNfSURCCAoGX0VtYWlsQgcKBV9OYW1lIikKGEdldEFjY291bnRCeUVt",
+            "YWlsUmVxdWVzdBINCgVFbWFpbBgBIAEoCSIjChVHZXRBY2NvdW50QnlJRFJl",
+            "cXVlc3QSCgoCSUQYASABKAQiPQoSR2V0QWNjb3VudFJlc3BvbnNlEgoKAklE",
+            "GAEgASgEEg0KBUVtYWlsGAIgASgJEgwKBE5hbWUYAyABKAkiRAoVQ2hhbmdl",
+            "UGFzc3dvcmRSZXF1ZXN0EgoKAklEGAEgASgEEg8KB0N1cnJlbnQYAiABKAkS",
+            "DgoGRnV0dXJlGAMgASgJIj4KD1Bhc3N3b3JkQ2hhbmdlZBIKCgJJRBgBIAEo",
+            "BBIPCgdDdXJyZW50GAIgASgJEg4KBkZ1dHVyZRgDIAEoCSI2ChNBdXRoZW50",
+            "aWNhdGVSZXF1ZXN0Eg0KBWVtYWlsGAEgASgJEhAKCHBhc3N3b3JkGAIgASgJ",
+            "IjIKFEF1dGhlbnRpY2F0ZVJlc3BvbnNlEgwKBGhvc3QYASABKAkSDAoEcG9y",
+            "dBgCIAEoDSIvCg1TZW5kRW1haWxUYXNrEg0KBWVtYWlsGAEgASgJEg8KB2Nv",
+            "bnRlbnQYAiABKAlCLAoZaW8uc2N5bmEuZXguYWNjb3VudC5wcm90b1ABqgIM",
+            "ZXgudnNhLnByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.CreateAccountRequest), global::ex.vsa.proto.CreateAccountRequest.Parser, new[]{ "Email", "Name", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.CreateAccountResponse), global::ex.vsa.proto.CreateAccountResponse.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.AccountCreated), global::ex.vsa.proto.AccountCreated.Parser, new[]{ "Id", "Email", "Name" }, new[]{ "Id", "Email", "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.RegisterAccountRequest), global::ex.vsa.proto.RegisterAccountRequest.Parser, new[]{ "Email", "Name", "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.RegisterAccountResponse), global::ex.vsa.proto.RegisterAccountResponse.Parser, new[]{ "ID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.AccountCreated), global::ex.vsa.proto.AccountCreated.Parser, new[]{ "ID", "Email", "Name" }, new[]{ "ID", "Email", "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.GetAccountByEmailRequest), global::ex.vsa.proto.GetAccountByEmailRequest.Parser, new[]{ "Email" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.GetAccountByIDRequest), global::ex.vsa.proto.GetAccountByIDRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.GetAccountResponse), global::ex.vsa.proto.GetAccountResponse.Parser, new[]{ "Id", "Email", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.ChangePasswordRequest), global::ex.vsa.proto.ChangePasswordRequest.Parser, new[]{ "Id", "Current", "Future" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.PasswordChanged), global::ex.vsa.proto.PasswordChanged.Parser, new[]{ "Id", "Current", "Future" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.GetAccountByIDRequest), global::ex.vsa.proto.GetAccountByIDRequest.Parser, new[]{ "ID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.GetAccountResponse), global::ex.vsa.proto.GetAccountResponse.Parser, new[]{ "ID", "Email", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.ChangePasswordRequest), global::ex.vsa.proto.ChangePasswordRequest.Parser, new[]{ "ID", "Current", "Future" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.PasswordChanged), global::ex.vsa.proto.PasswordChanged.Parser, new[]{ "ID", "Current", "Future" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.AuthenticateRequest), global::ex.vsa.proto.AuthenticateRequest.Parser, new[]{ "Email", "Password" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.AuthenticateResponse), global::ex.vsa.proto.AuthenticateResponse.Parser, new[]{ "Host", "Port" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ex.vsa.proto.SendEmailTask), global::ex.vsa.proto.SendEmailTask.Parser, new[]{ "Email", "Content" }, null, null, null, null)
@@ -61,18 +61,15 @@ namespace ex.vsa.proto {
 
   }
   #region Messages
-  /// <summary>
-  ///CREATE
-  /// </summary>
-  public sealed partial class CreateAccountRequest : pb::IMessage<CreateAccountRequest>
+  public sealed partial class RegisterAccountRequest : pb::IMessage<RegisterAccountRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CreateAccountRequest> _parser = new pb::MessageParser<CreateAccountRequest>(() => new CreateAccountRequest());
+    private static readonly pb::MessageParser<RegisterAccountRequest> _parser = new pb::MessageParser<RegisterAccountRequest>(() => new RegisterAccountRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CreateAccountRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<RegisterAccountRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -85,14 +82,14 @@ namespace ex.vsa.proto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateAccountRequest() {
+    public RegisterAccountRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateAccountRequest(CreateAccountRequest other) : this() {
+    public RegisterAccountRequest(RegisterAccountRequest other) : this() {
       email_ = other.email_;
       name_ = other.name_;
       password_ = other.password_;
@@ -100,11 +97,11 @@ namespace ex.vsa.proto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateAccountRequest Clone() {
-      return new CreateAccountRequest(this);
+    public RegisterAccountRequest Clone() {
+      return new RegisterAccountRequest(this);
     }
 
-    /// <summary>Field number for the "email" field.</summary>
+    /// <summary>Field number for the "Email" field.</summary>
     public const int EmailFieldNumber = 1;
     private string email_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -115,7 +112,7 @@ namespace ex.vsa.proto {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
+    /// <summary>Field number for the "Name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -126,7 +123,7 @@ namespace ex.vsa.proto {
       }
     }
 
-    /// <summary>Field number for the "password" field.</summary>
+    /// <summary>Field number for the "Password" field.</summary>
     public const int PasswordFieldNumber = 3;
     private string password_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -139,11 +136,11 @@ namespace ex.vsa.proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CreateAccountRequest);
+      return Equals(other as RegisterAccountRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CreateAccountRequest other) {
+    public bool Equals(RegisterAccountRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -236,7 +233,7 @@ namespace ex.vsa.proto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CreateAccountRequest other) {
+    public void MergeFrom(RegisterAccountRequest other) {
       if (other == null) {
         return;
       }
@@ -308,15 +305,15 @@ namespace ex.vsa.proto {
 
   }
 
-  public sealed partial class CreateAccountResponse : pb::IMessage<CreateAccountResponse>
+  public sealed partial class RegisterAccountResponse : pb::IMessage<RegisterAccountResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CreateAccountResponse> _parser = new pb::MessageParser<CreateAccountResponse>(() => new CreateAccountResponse());
+    private static readonly pb::MessageParser<RegisterAccountResponse> _parser = new pb::MessageParser<RegisterAccountResponse>(() => new RegisterAccountResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CreateAccountResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<RegisterAccountResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -329,55 +326,55 @@ namespace ex.vsa.proto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateAccountResponse() {
+    public RegisterAccountResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateAccountResponse(CreateAccountResponse other) : this() {
-      id_ = other.id_;
+    public RegisterAccountResponse(RegisterAccountResponse other) : this() {
+      iD_ = other.iD_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateAccountResponse Clone() {
-      return new CreateAccountResponse(this);
+    public RegisterAccountResponse Clone() {
+      return new RegisterAccountResponse(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private ulong id_;
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private ulong iD_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong Id {
-      get { return id_; }
+    public ulong ID {
+      get { return iD_; }
       set {
-        id_ = value;
+        iD_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CreateAccountResponse);
+      return Equals(other as RegisterAccountResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CreateAccountResponse other) {
+    public bool Equals(RegisterAccountResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (ID != other.ID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (ID != 0UL) hash ^= ID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -394,9 +391,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -407,9 +404,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -420,8 +417,8 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      if (ID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -430,12 +427,12 @@ namespace ex.vsa.proto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CreateAccountResponse other) {
+    public void MergeFrom(RegisterAccountResponse other) {
       if (other == null) {
         return;
       }
-      if (other.Id != 0UL) {
-        Id = other.Id;
+      if (other.ID != 0UL) {
+        ID = other.ID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -452,7 +449,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
         }
@@ -470,7 +467,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
         }
@@ -511,7 +508,7 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountCreated(AccountCreated other) : this() {
       _hasBits0 = other._hasBits0;
-      id_ = other.id_;
+      iD_ = other.iD_;
       email_ = other.email_;
       name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -522,29 +519,29 @@ namespace ex.vsa.proto {
       return new AccountCreated(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private ulong id_;
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private ulong iD_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong Id {
-      get { if ((_hasBits0 & 1) != 0) { return id_; } else { return 0UL; } }
+    public ulong ID {
+      get { if ((_hasBits0 & 1) != 0) { return iD_; } else { return 0UL; } }
       set {
         _hasBits0 |= 1;
-        id_ = value;
+        iD_ = value;
       }
     }
-    /// <summary>Gets whether the "id" field is set</summary>
+    /// <summary>Gets whether the "ID" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasId {
+    public bool HasID {
       get { return (_hasBits0 & 1) != 0; }
     }
-    /// <summary>Clears the value of the "id" field</summary>
+    /// <summary>Clears the value of the "ID" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearId() {
+    public void ClearID() {
       _hasBits0 &= ~1;
     }
 
-    /// <summary>Field number for the "email" field.</summary>
+    /// <summary>Field number for the "Email" field.</summary>
     public const int EmailFieldNumber = 2;
     private string email_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -554,18 +551,18 @@ namespace ex.vsa.proto {
         email_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
-    /// <summary>Gets whether the "email" field is set</summary>
+    /// <summary>Gets whether the "Email" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasEmail {
       get { return email_ != null; }
     }
-    /// <summary>Clears the value of the "email" field</summary>
+    /// <summary>Clears the value of the "Email" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearEmail() {
       email_ = null;
     }
 
-    /// <summary>Field number for the "name" field.</summary>
+    /// <summary>Field number for the "Name" field.</summary>
     public const int NameFieldNumber = 3;
     private string name_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -575,12 +572,12 @@ namespace ex.vsa.proto {
         name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
-    /// <summary>Gets whether the "name" field is set</summary>
+    /// <summary>Gets whether the "Name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasName {
       get { return name_ != null; }
     }
-    /// <summary>Clears the value of the "name" field</summary>
+    /// <summary>Clears the value of the "Name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearName() {
       name_ = null;
@@ -599,7 +596,7 @@ namespace ex.vsa.proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (ID != other.ID) return false;
       if (Email != other.Email) return false;
       if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -608,7 +605,7 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasId) hash ^= Id.GetHashCode();
+      if (HasID) hash ^= ID.GetHashCode();
       if (HasEmail) hash ^= Email.GetHashCode();
       if (HasName) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
@@ -627,9 +624,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (HasId) {
+      if (HasID) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (HasEmail) {
         output.WriteRawTag(18);
@@ -648,9 +645,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasId) {
+      if (HasID) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (HasEmail) {
         output.WriteRawTag(18);
@@ -669,8 +666,8 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (HasId) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      if (HasID) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ID);
       }
       if (HasEmail) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Email);
@@ -689,8 +686,8 @@ namespace ex.vsa.proto {
       if (other == null) {
         return;
       }
-      if (other.HasId) {
-        Id = other.Id;
+      if (other.HasID) {
+        ID = other.ID;
       }
       if (other.HasEmail) {
         Email = other.Email;
@@ -713,7 +710,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -739,7 +736,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -798,7 +795,7 @@ namespace ex.vsa.proto {
       return new GetAccountByEmailRequest(this);
     }
 
-    /// <summary>Field number for the "email" field.</summary>
+    /// <summary>Field number for the "Email" field.</summary>
     public const int EmailFieldNumber = 1;
     private string email_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -961,7 +958,7 @@ namespace ex.vsa.proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetAccountByIDRequest(GetAccountByIDRequest other) : this() {
-      id_ = other.id_;
+      iD_ = other.iD_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -970,14 +967,14 @@ namespace ex.vsa.proto {
       return new GetAccountByIDRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private ulong id_;
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private ulong iD_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong Id {
-      get { return id_; }
+    public ulong ID {
+      get { return iD_; }
       set {
-        id_ = value;
+        iD_ = value;
       }
     }
 
@@ -994,14 +991,14 @@ namespace ex.vsa.proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (ID != other.ID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (ID != 0UL) hash ^= ID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1018,9 +1015,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1031,9 +1028,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1044,8 +1041,8 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      if (ID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1058,8 +1055,8 @@ namespace ex.vsa.proto {
       if (other == null) {
         return;
       }
-      if (other.Id != 0UL) {
-        Id = other.Id;
+      if (other.ID != 0UL) {
+        ID = other.ID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1076,7 +1073,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
         }
@@ -1094,7 +1091,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
         }
@@ -1133,7 +1130,7 @@ namespace ex.vsa.proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetAccountResponse(GetAccountResponse other) : this() {
-      id_ = other.id_;
+      iD_ = other.iD_;
       email_ = other.email_;
       name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1144,18 +1141,18 @@ namespace ex.vsa.proto {
       return new GetAccountResponse(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private ulong id_;
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private ulong iD_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong Id {
-      get { return id_; }
+    public ulong ID {
+      get { return iD_; }
       set {
-        id_ = value;
+        iD_ = value;
       }
     }
 
-    /// <summary>Field number for the "email" field.</summary>
+    /// <summary>Field number for the "Email" field.</summary>
     public const int EmailFieldNumber = 2;
     private string email_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1166,7 +1163,7 @@ namespace ex.vsa.proto {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
+    /// <summary>Field number for the "Name" field.</summary>
     public const int NameFieldNumber = 3;
     private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1190,7 +1187,7 @@ namespace ex.vsa.proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (ID != other.ID) return false;
       if (Email != other.Email) return false;
       if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1199,7 +1196,7 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (ID != 0UL) hash ^= ID.GetHashCode();
       if (Email.Length != 0) hash ^= Email.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
@@ -1218,9 +1215,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (Email.Length != 0) {
         output.WriteRawTag(18);
@@ -1239,9 +1236,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (Email.Length != 0) {
         output.WriteRawTag(18);
@@ -1260,8 +1257,8 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      if (ID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ID);
       }
       if (Email.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Email);
@@ -1280,8 +1277,8 @@ namespace ex.vsa.proto {
       if (other == null) {
         return;
       }
-      if (other.Id != 0UL) {
-        Id = other.Id;
+      if (other.ID != 0UL) {
+        ID = other.ID;
       }
       if (other.Email.Length != 0) {
         Email = other.Email;
@@ -1304,7 +1301,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -1330,7 +1327,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -1377,7 +1374,7 @@ namespace ex.vsa.proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChangePasswordRequest(ChangePasswordRequest other) : this() {
-      id_ = other.id_;
+      iD_ = other.iD_;
       current_ = other.current_;
       future_ = other.future_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1388,18 +1385,18 @@ namespace ex.vsa.proto {
       return new ChangePasswordRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private ulong id_;
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private ulong iD_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong Id {
-      get { return id_; }
+    public ulong ID {
+      get { return iD_; }
       set {
-        id_ = value;
+        iD_ = value;
       }
     }
 
-    /// <summary>Field number for the "current" field.</summary>
+    /// <summary>Field number for the "Current" field.</summary>
     public const int CurrentFieldNumber = 2;
     private string current_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1410,7 +1407,7 @@ namespace ex.vsa.proto {
       }
     }
 
-    /// <summary>Field number for the "future" field.</summary>
+    /// <summary>Field number for the "Future" field.</summary>
     public const int FutureFieldNumber = 3;
     private string future_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1434,7 +1431,7 @@ namespace ex.vsa.proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (ID != other.ID) return false;
       if (Current != other.Current) return false;
       if (Future != other.Future) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1443,7 +1440,7 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (ID != 0UL) hash ^= ID.GetHashCode();
       if (Current.Length != 0) hash ^= Current.GetHashCode();
       if (Future.Length != 0) hash ^= Future.GetHashCode();
       if (_unknownFields != null) {
@@ -1462,9 +1459,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (Current.Length != 0) {
         output.WriteRawTag(18);
@@ -1483,9 +1480,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (Current.Length != 0) {
         output.WriteRawTag(18);
@@ -1504,8 +1501,8 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      if (ID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ID);
       }
       if (Current.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Current);
@@ -1524,8 +1521,8 @@ namespace ex.vsa.proto {
       if (other == null) {
         return;
       }
-      if (other.Id != 0UL) {
-        Id = other.Id;
+      if (other.ID != 0UL) {
+        ID = other.ID;
       }
       if (other.Current.Length != 0) {
         Current = other.Current;
@@ -1548,7 +1545,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -1574,7 +1571,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -1621,7 +1618,7 @@ namespace ex.vsa.proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PasswordChanged(PasswordChanged other) : this() {
-      id_ = other.id_;
+      iD_ = other.iD_;
       current_ = other.current_;
       future_ = other.future_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1632,18 +1629,18 @@ namespace ex.vsa.proto {
       return new PasswordChanged(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private ulong id_;
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private ulong iD_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong Id {
-      get { return id_; }
+    public ulong ID {
+      get { return iD_; }
       set {
-        id_ = value;
+        iD_ = value;
       }
     }
 
-    /// <summary>Field number for the "current" field.</summary>
+    /// <summary>Field number for the "Current" field.</summary>
     public const int CurrentFieldNumber = 2;
     private string current_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1654,7 +1651,7 @@ namespace ex.vsa.proto {
       }
     }
 
-    /// <summary>Field number for the "future" field.</summary>
+    /// <summary>Field number for the "Future" field.</summary>
     public const int FutureFieldNumber = 3;
     private string future_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1678,7 +1675,7 @@ namespace ex.vsa.proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (ID != other.ID) return false;
       if (Current != other.Current) return false;
       if (Future != other.Future) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1687,7 +1684,7 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (ID != 0UL) hash ^= ID.GetHashCode();
       if (Current.Length != 0) hash ^= Current.GetHashCode();
       if (Future.Length != 0) hash ^= Future.GetHashCode();
       if (_unknownFields != null) {
@@ -1706,9 +1703,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (Current.Length != 0) {
         output.WriteRawTag(18);
@@ -1727,9 +1724,9 @@ namespace ex.vsa.proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0UL) {
+      if (ID != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(Id);
+        output.WriteUInt64(ID);
       }
       if (Current.Length != 0) {
         output.WriteRawTag(18);
@@ -1748,8 +1745,8 @@ namespace ex.vsa.proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      if (ID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ID);
       }
       if (Current.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Current);
@@ -1768,8 +1765,8 @@ namespace ex.vsa.proto {
       if (other == null) {
         return;
       }
-      if (other.Id != 0UL) {
-        Id = other.Id;
+      if (other.ID != 0UL) {
+        ID = other.ID;
       }
       if (other.Current.Length != 0) {
         Current = other.Current;
@@ -1792,7 +1789,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -1818,7 +1815,7 @@ namespace ex.vsa.proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
+            ID = input.ReadUInt64();
             break;
           }
           case 18: {

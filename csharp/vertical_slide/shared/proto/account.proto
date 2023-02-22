@@ -4,49 +4,48 @@ option java_multiple_files = true;
 option java_package = "io.scyna.ex.account.proto";
 option csharp_namespace = "ex.vsa.proto";
 
-/*CREATE*/
-message CreateAccountRequest {
-  string email = 1;
-  string name = 2;
-  string password = 3;
+message RegisterAccountRequest {
+  string Email = 1;
+  string Name = 2;
+  string Password = 3;
 }
 
-message CreateAccountResponse {
-  uint64 id = 1;
+message RegisterAccountResponse {
+  uint64 ID = 1;
 }
 
 message AccountCreated{
-  optional uint64 id = 1;
-  optional string email = 2;
-  optional string name = 3;
+  optional uint64 ID = 1;
+  optional string Email = 2;
+  optional string Name = 3;
 }
 
 /*GET*/
 message GetAccountByEmailRequest {
-  string email = 1;
+  string Email = 1;
 }
 
 message GetAccountByIDRequest {
-  uint64 id = 1;
+  uint64 ID = 1;
 }
 
 message GetAccountResponse {
-  uint64 id = 1;
-  string email = 2;
-  string name = 3;
+  uint64 ID = 1;
+  string Email = 2;
+  string Name = 3;
 }
 
 
 message ChangePasswordRequest {
-  uint64 id = 1;
-  string current = 2;
-  string future = 3;
+  uint64 ID = 1;
+  string Current = 2;
+  string Future = 3;
 }
 
 message PasswordChanged{
-  uint64 id = 1;
-  string current = 2;
-  string future = 3;
+  uint64 ID = 1;
+  string Current = 2;
+  string Future = 3;
 }
 
 message AuthenticateRequest{
