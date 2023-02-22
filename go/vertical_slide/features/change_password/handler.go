@@ -8,7 +8,7 @@ import (
 
 const URL = "/account/change-password"
 
-func Handler(ctx *scyna.Context, request *proto.ChangePasswordRequest) scyna.Error {
+func Handler(ctx scyna.Context, request *proto.ChangePasswordRequest) scyna.Error {
 	ctx.Info("Receive ChangePasswordRequest")
 
 	/*TODO*/

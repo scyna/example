@@ -7,7 +7,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func GetAccountHandler(ctx *scyna.Context, request *proto.CreateAccountRequest) scyna.Error {
+func GetAccountHandler(ctx scyna.Context, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Info("Receive GetAccountRequest")
 
 	repository := repository.LoadRepository(ctx)

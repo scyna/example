@@ -7,7 +7,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func ChangePasswordHandler(ctx *scyna.Context, request *proto.ChangePasswordRequest) scyna.Error {
+func ChangePasswordHandler(ctx scyna.Context, request *proto.ChangePasswordRequest) scyna.Error {
 	ctx.Info("Receive ChangePasswordRequest")
 
 	service := domain.NewAccountService(ctx)
@@ -25,7 +25,7 @@ func ChangePasswordHandler(ctx *scyna.Context, request *proto.ChangePasswordRequ
 	}
 
 	command := scyna.NewCommand(ctx).
-		SetAggregateID(account.ID).
+		SetEntity(account.ID).
 		SetChannel(PASSWORD_CHANGED_CHANNEL).
 		SetEvent(&proto.PasswordChanged{
 			Id:      account.ID,

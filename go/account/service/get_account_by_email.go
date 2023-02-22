@@ -9,7 +9,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func GetAccountByEmailHandler(ctx *scyna.Context, request *proto.GetAccountByEmailRequest) scyna.Error {
+func GetAccountByEmailHandler(ctx scyna.Context, request *proto.GetAccountByEmailRequest) scyna.Error {
 	ctx.Info("Receive GetAccountRequest")
 
 	service := domain.NewAccountService(ctx)

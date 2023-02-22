@@ -9,10 +9,10 @@ import (
 
 type accountService struct {
 	Repository *repository.AccountRepository
-	context    *scyna.Context
+	context    scyna.Context
 }
 
-func NewAccountService(context *scyna.Context) *accountService {
+func NewAccountService(context scyna.Context) *accountService {
 	return &accountService{
 		context:    context,
 		Repository: &repository.AccountRepository{LOG: context},

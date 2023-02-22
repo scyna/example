@@ -8,7 +8,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func CreateCustomerHandler(ctx *scyna.Context, request *proto.CreateCustomerRequest) scyna.Error {
+func CreateCustomerHandler(ctx scyna.Context, request *proto.CreateCustomerRequest) scyna.Error {
 	var ret scyna.Error
 	repository := domain.LoadRepository(ctx)
 	customer := model.Customer{ID: model.CustomerID(domain.OneID.Next())}
