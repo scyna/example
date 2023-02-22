@@ -17,7 +17,7 @@ func NewRepository(LOG scyna.Logger) *Repository {
 	}
 }
 
-func (r *Repository) ChangePasword(account *model.Account, password string) scyna.Error {
+func (r *Repository) ChangePassword(account *model.Account) scyna.Error {
 
 	/*TODO*/
 
