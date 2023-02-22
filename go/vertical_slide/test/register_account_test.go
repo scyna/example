@@ -10,7 +10,7 @@ import (
 	scyna_test "github.com/scyna/core/testing"
 )
 
-func TestCreateAccount_Success(t *testing.T) {
+func TestRegisterAccount_Success(t *testing.T) {
 	cleanup()
 	scyna_test.EndpointTest(register_account.Path).
 		WithRequest(&proto.RegisterAccountRequest{
@@ -21,7 +21,7 @@ func TestCreateAccount_Success(t *testing.T) {
 		ExpectSuccess().Run(t)
 }
 
-func TestCreateAccount_Duplicated(t *testing.T) {
+func TestRegisterAccount_Duplicated(t *testing.T) {
 	cleanup()
 	scyna_test.EndpointTest(register_account.Path).
 		WithRequest(&proto.RegisterAccountRequest{
@@ -40,7 +40,7 @@ func TestCreateAccount_Duplicated(t *testing.T) {
 		ExpectError(model.ACCOUNT_EXISTED).Run(t)
 }
 
-func TestCreateAccount_BadEmail(t *testing.T) {
+func TestRegisterAccount_BadEmail(t *testing.T) {
 	cleanup()
 	scyna_test.EndpointTest(register_account.Path).
 		WithRequest(&proto.RegisterAccountRequest{
