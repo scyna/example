@@ -32,12 +32,11 @@ class CreateAccountTest
                     Name = "Nguyen Van A",
                     Password = "12345678",
                 })
-                .PublishEventTo(Path.ACCOUNT_CREATED_CHANNEL)
-                // .MatchEvent(new proto.AccountCreated
-                // {
-                //     Email = "a@gmail.com",
-                //     Name = "Nguyen Van A",
-                // })
+                .MatchEvent(Path.ACCOUNT_CREATED_CHANNEL, new proto.AccountCreated
+                {
+                    Email = "a@gmail.com",
+                    Name = "Nguyen Van A",
+                })
                 .ExpectSuccess()
                 .Run();
 
