@@ -9,7 +9,7 @@ import (
 
 const PATH = "/account/register"
 
-func Handler(ctx scyna.Context, request *proto.RegisterAccountRequest) scyna.Error {
+func Handler(ctx *scyna.Endpoint, request *proto.RegisterAccountRequest) scyna.Error {
 	ctx.Info("Receive RegisterAccountRequest")
 
 	if validateRequest(request) != nil {

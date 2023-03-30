@@ -9,7 +9,7 @@ import (
 
 const PATH = "/account/change-password"
 
-func Handler(ctx scyna.Context, request *proto.ChangePasswordRequest) scyna.Error {
+func Handler(ctx *scyna.Endpoint, request *proto.ChangePasswordRequest) scyna.Error {
 	ctx.Info("Receive ChangePasswordRequest")
 
 	repository := NewRepository(ctx)

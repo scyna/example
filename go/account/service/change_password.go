@@ -7,7 +7,7 @@ import (
 	scyna "github.com/scyna/core"
 )
 
-func ChangePasswordHandler(ctx scyna.Context, request *proto.ChangePasswordRequest) scyna.Error {
+func ChangePasswordHandler(ctx *scyna.Endpoint, request *proto.ChangePasswordRequest) scyna.Error {
 	ctx.Info("Receive ChangePasswordRequest")
 
 	service := domain.NewAccountService(ctx)

@@ -9,7 +9,7 @@ import (
 	proto "ex/account/proto"
 )
 
-func CreateAccountHandler(ctx scyna.Context, request *proto.CreateAccountRequest) scyna.Error {
+func CreateAccountHandler(ctx *scyna.Endpoint, request *proto.CreateAccountRequest) scyna.Error {
 	ctx.Info("Receive CreateAccountRequest")
 
 	service := domain.NewAccountService(ctx)
